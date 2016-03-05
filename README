@@ -1,0 +1,20 @@
+This project consist of code for solving 2 problems:
+
+1. Write some code, that will flatten an array of arbitrarily nested arrays of integers into a flat array of integers.
+e.g. [[1,2,[3]],4] -> [1,2,3,4].
+
+2. We have some customer records in a text file (customers.json) -- one customer per line, JSON-encoded.
+We want to invite any customer within 100km of location (GPS coordinates 53.3381985, -6.2592576)
+for some food and drinks on us. Write a program that will read the full list of customers and output the names
+and user ids of matching customers (within 100km), sorted by user id (ascending).
+
+
+package/Class com.parser.NestedArrayParser : Implements first problem
+
+package com.invite : has implementation of second problem
+
+
+Project can be build using maven as : mvn clean install
+
+Syntax to run Utility.jar : java -jar Utility.jar path-to-customer-text-file
+Example : java -jar Utility.jar ./customer.text
